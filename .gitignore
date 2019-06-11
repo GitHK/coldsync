@@ -4,3 +4,4 @@
 .coverage
 credentials.json
 .idea/
+*.eggs

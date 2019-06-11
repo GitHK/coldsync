@@ -8,3 +8,6 @@ before_install:
 
 script:
   - docker run --rm -i -t coldsync sh -c "pip install .[testing] && python setup.py test"
+
+after_success:
+  - coveralls

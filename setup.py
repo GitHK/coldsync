@@ -3,8 +3,9 @@ from distutils.core import setup
 
 testpkgs = [
     "pytest",
-    "pytest-cov",
-    "pytest-runner"
+    "pytest-cov<2.6",
+    "pytest-runner",
+    "python-coveralls"
 ]
 
 setup(
