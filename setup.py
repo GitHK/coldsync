@@ -1,6 +1,12 @@
 import setuptools
 from distutils.core import setup
 
+testpkgs = [
+    "pytest",
+    "pytest-cov",
+    "pytest-runner"
+]
+
 setup(
     name='coldsync',
     version='0.0.1',
@@ -18,10 +24,9 @@ setup(
             'coldsync = coldsync.main:main'
         ]
     },
-    tests_require=[
-        "pytest",
-        "pytest-cov",
-        "pytest-runner"
-    ],
+    tests_require=testpkgs,
+    extras_require={
+        'testing': testpkgs
+    },
     setup_requires=['pytest-runner']
 )

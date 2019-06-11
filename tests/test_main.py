@@ -11,6 +11,21 @@ from coldsync.main import CS_DATA_CENTER, CS_PROJECT_NAME, CS_ENV_NAME, CS_GOOGL
 from tests.utils_for_testing import mockify_dict
 
 
+def teardown_function(function):
+    """ teardown any state that was previously setup with a setup_function
+    call.
+    """
+
+    def teardown_env_var(env_var):
+        if env_var in os.environ:
+            del os.environ[env_var]
+
+    teardown_env_var(CS_DATA_CENTER)
+    teardown_env_var(CS_PROJECT_NAME)
+    teardown_env_var(CS_ENV_NAME)
+    teardown_env_var(CS_GOOGLE_SERVICE_ACCOUNT_PATH)
+
+
 @mock.patch.dict(os.environ, {CS_DATA_CENTER: "local-testing-machine"})
 @mock.patch.dict(os.environ, {CS_PROJECT_NAME: "test-suite"})
 @mock.patch.dict(os.environ, {CS_ENV_NAME: "test-bench"})
