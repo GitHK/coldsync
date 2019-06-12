@@ -11,3 +11,9 @@ COPY . /app
 WORKDIR /app
 
 RUN pip install -e .
+
+# Run a server serving an empty directory in order for the container to not get killed
+# TO BE REPLACED!
+CMD mkdir /nothing
+WORKDIR /nothing
+CMD python -m http.server 8518
