@@ -8,6 +8,7 @@ The API is can be extend to add support other providers.
 This project is build and released as a docker image with the scope of being 
 as a sidecar container for application backup.
 
+The image comes with `curl` and `kubectl`.
     
 ## Usage
 
