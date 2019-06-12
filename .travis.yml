@@ -8,7 +8,7 @@ before_install:
   - docker tag coldsync hubhk/coldsync
 
 script:
-  - docker run --rm -i -t coldsync sh -c "pip install .[testing] && python setup.py test"
+  - docker run --rm -i -t coldsync sh -c "cd /app && pip install .[testing] && python setup.py test"
 
 after_success:
   - coveralls
