@@ -1,5 +1,6 @@
 import setuptools
 from distutils.core import setup
+from os import path
 
 testpkgs = [
     "pytest",
@@ -8,6 +9,11 @@ testpkgs = [
     "python-coveralls"
 ]
 
+# read the contents of your README file
+this_directory = path.abspath(path.dirname(__file__))
+with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
+
 setup(
     name='coldsync',
     version='0.0.1',
@@ -15,6 +21,8 @@ setup(
     author='Andrei Neagu',
     author_email='it.neagu.andrei@gmail.com',
     packages=['coldsync'],
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     license='GPLv3',
     install_requires=[
         "google==2.0.2",
