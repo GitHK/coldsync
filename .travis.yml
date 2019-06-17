@@ -16,3 +16,6 @@ install:
 script:
   - pip install .[testing]
   - python setup.py test
+
+after_success:
+  - coveralls
