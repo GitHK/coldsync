@@ -2,6 +2,10 @@
 
 [![Build Status](https://travis-ci.org/GitHK/coldsync.svg?branch=master)](https://travis-ci.org/GitHK/coldsync)
 [![Coverage Status](https://coveralls.io/repos/github/GitHK/coldsync/badge.svg?branch=master)](https://coveralls.io/github/GitHK/coldsync?branch=master)
+[![PyPI version](https://badge.fury.io/py/coldsync.svg)](https://badge.fury.io/py/coldsync)
+![License](https://img.shields.io/pypi/l/coldsync.svg)
+![Downloads](https://img.shields.io/pypi/dm/coldsync.svg)
+
 [![Python 3.4](https://img.shields.io/badge/python-3.4-blue.svg)](https://www.python.org/downloads/release/python-340/)
 [![Python 3.5](https://img.shields.io/badge/python-3.5-blue.svg)](https://www.python.org/downloads/release/python-350/)
 [![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
