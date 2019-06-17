@@ -16,8 +16,8 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='coldsync',
-    version='0.0.2',
-    description='Used to upload file sto cold storage',
+    version='0.0.3',
+    description='Used to upload files to cold storage',
     author='Andrei Neagu',
     author_email='it.neagu.andrei@gmail.com',
     packages=['coldsync'],
