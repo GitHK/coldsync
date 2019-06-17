@@ -29,5 +29,9 @@ setup(
     extras_require={
         'testing': testpkgs
     },
-    setup_requires=['pytest-runner']
+    setup_requires=['pytest-runner'],
+    classifiers=[
+        "Topic :: System :: Archiving",
+        "Topic :: System :: Archiving :: Backup"
+    ]
 )
