@@ -5,3 +5,4 @@ credentials.json
 .idea/
 *.eggs
 *.jpg
+dist/

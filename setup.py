@@ -15,6 +15,7 @@ setup(
     author='Andrei Neagu',
     author_email='it.neagu.andrei@gmail.com',
     packages=['coldsync'],
+    license='GPLv3',
     install_requires=[
         "google==2.0.2",
         "google-cloud-storage==1.16.1",
@@ -32,6 +33,12 @@ setup(
     setup_requires=['pytest-runner'],
     classifiers=[
         "Topic :: System :: Archiving",
-        "Topic :: System :: Archiving :: Backup"
+        "Topic :: System :: Archiving :: Backup",
+        "Programming Language :: Python :: 3.4",
+        "Programming Language :: Python :: 3.5",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: Implementation :: PyPy"
     ]
 )
